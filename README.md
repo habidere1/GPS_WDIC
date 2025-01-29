@@ -61,11 +61,11 @@ if __name__ == "__main__":
 
 **Wichtig:** Das Modul kann aufgrund seiner Sensitivität nur unter **freiem Himmel** betrieben werden** 
 
-Parameter:  5 V Versorgung
-            36 mA Stromaufnahme
-            1 Hz Refresh Rate
-            <3 m Genauigkeit
-            NMEA & SiRF Support
+Parameter:  +5 V Versorgung
+            +36 mA Stromaufnahme
+            +1 Hz Refresh Rate
+            +<3 m Genauigkeit
+            +NMEA & SiRF Support
 
 ### Verwendung
 
