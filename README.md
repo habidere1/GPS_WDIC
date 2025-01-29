@@ -66,11 +66,12 @@ In der Date gps_tracker.py wurde versucht, immer der aktuelle Standort aus der S
 
 **Wichtig:** Das Modul kann aufgrund seiner Sensitivität nur unter **freiem Himmel** betrieben werden** 
 
-Parameter:  +5 V Versorgung
-            +36 mA Stromaufnahme
-            +1 Hz Refresh Rate
-            +<3 m Genauigkeit
-            +NMEA & SiRF Support
+Parameter:  
++ 5 V Versorgung
++ 36 mA Stromaufnahme
++ 1 Hz Refresh Rate
++ <3 m Genauigkeit
++ NMEA & SiRF Support
 
 ### Verwendung
 
@@ -78,6 +79,7 @@ Mit einer Terimalsoftware wie beispielsweise [HTerm](https://www.der-hammer.info
 
 *Hinweis: Bis das Modul echte Daten empfängt kann es etwas dauern, bis zu 5 Minuten. Achte auf die Onboard-LED, diese blinkt wenn Daten empfangen werden.*
 
+**Rohdaten:**
 ~~~
 $GPGGA,084901.881,4716.1628,N,00938.0646,E,1,03,6.8,-48.0,M,48.0,M,,0000*46
 $GPGSA,A,2,15,23,24,,,,,,,,,,6.9,6.8,1.0*30
