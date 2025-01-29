@@ -56,6 +56,11 @@ if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
 ~~~
 
+Man kann folgendes Ergebniss auf dem Webserver sehen:
+![grafik](https://github.com/user-attachments/assets/cf8bc4d3-df5a-4471-b4a4-2403d5cd6e30)
+
+In der Date gps_tracker.py wurde versucht, immer der aktuelle Standort aus der Seriellen Schnittstelle auszulesen und als "Weg" auf der Karte auszugeben, was aber noch nicht funktioniert und noch ausgebaut wird.
+
 
 ## GPS-Empfänger
 
