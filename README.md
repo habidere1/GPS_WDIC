@@ -57,4 +57,49 @@ if __name__ == "__main__":
 ~~~
 
 
+## GPS-Empfänger
+
+**Wichtig:** Das Modul kann aufgrund seiner Sensitivität nur unter **freiem Himmel** betrieben werden** 
+
+Parameter:  5 V Versorgung
+            36 mA Stromaufnahme
+            1 Hz Refresh Rate
+            <3 m Genauigkeit
+            NMEA & SiRF Support
+
+### Verwendung
+
+Mit einer Terimalsoftware wie beispielsweise [HTerm](https://www.der-hammer.info/pages/terminal.html) können die rohen NMEA Sätze (im Default Mode) ausgelesen werden. Die Baudrate beträgt im Default Mode 4800 BPS. 
+
+*Hinweis: Bis das Modul echte Daten empfängt kann es etwas dauern, bis zu 5 Minuten. Achte auf die Onboard-LED, diese blinkt wenn Daten empfangen werden.*
+
+~~~
+$GPGGA,084901.881,4716.1628,N,00938.0646,E,1,03,6.8,-48.0,M,48.0,M,,0000*46
+$GPGSA,A,2,15,23,24,,,,,,,,,,6.9,6.8,1.0*30
+$GPRMC,084901.881,A,4716.1628,N,00938.0646,E,0.18,264.02,160125,,,A*6E
+$GPVTG,264.02,T,,M,0.18,N,0.3,K,N*0A
+$GPGGA,084902.881,4716.1627,N,00938.0645,E,1,03,6.8,-48.0,M,48.0,M,,0000*49
+$GPGSA,A,2,15,23,24,,,,,,,,,,6.9,6.8,1.0*30
+$GPRMC,084902.881,A,4716.1627,N,00938.0645,E,0.17,278.45,160125,,,A*60
+$GPVTG,278.45,T,,M,0.17,N,0.3,K,N*0B
+$GPGGA,084903.881,4716.1627,N,00938.0644,E,1,03,6.8,-48.0,M,48.0,M,,0000*49
+$GPGSA,A,2,15,23,24,,,,,,,,,,6.9,6.8,1.0*30
+$GPRMC,084903.881,A,4716.1627,N,00938.0644,E,0.10,233.25,160125,,,A*6E
+$GPVTG,233.25,T,,M,0.10,N,0.2,K,N*04
+$GPGGA,084904.885,4716.1628,N,00938.0671,E,1,03,6.8,-48.0,M,48.0,M,,0000*43
+$GPGSA,A,2,15,23,24,,,,,,,,,,6.9,6.8,1.0*30
+$GPRMC,084904.885,A,4716.1628,N,00938.0671,E,0.26,18.10,160125,,,A*5C
+$GPVTG,18.10,T,,M,0.26,N,0.5,K,N*3B
+$GPGGA,084905.881,4716.1629,N,00938.0715,E,1,03,6.8,-48.0,M,48.0,M,,0000*44
+$GPGSA,A,2,15,23,24,,,,,,,,,,6.9,6.8,1.0*30
+$GPGSV,3,1,12,15,72,250,34,24,41,280,35,23,28,300,41,13,61,135,19*71
+$GPGSV,3,2,12,14,40,055,16,28,36,211,,27,35,275,,30,33,225,*75
+$GPGSV,3,3,12,05,31,056,23,09,30,277,,17,29,096,,19,20,129,*75
+$GPRMC,084905.881,A,4716.1629,N,00938.0715,E,0.61,94.81,160125,,,A*54
+$GPVTG,94.81,T,,M,0.61,N,1.1,K,N*31
+$GPGGA,084906.881,4716.1626,N,00938.0635,E,1,03,6.8,-48.0,M,48.0,M,,0000*4B
+$GPGSA,A,2,15,23,24,,,,,,,,,,6.9,6.8,1.0*30
+$GPRMC,084906.881,A,4716.1626,N,00938.0635,E,0.49,87.02,160125,,,A*58
+$GPVTG,87.02,T,,M,0.49,N,0.9,K,N*3B
+~~~
 
