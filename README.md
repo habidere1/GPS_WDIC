@@ -110,3 +110,8 @@ $GPRMC,084906.881,A,4716.1626,N,00938.0635,E,0.49,87.02,160125,,,A*58
 $GPVTG,87.02,T,,M,0.49,N,0.9,K,N*3B
 ~~~
 
+## Requirements
+Um unser Projekt auf dem Raspberry verwenden zu können müssen folgende Librarys auf dem Raspberry intstalliert werden:
+- Flask
+- Pynmea2
+- serial
