@@ -64,7 +64,7 @@ In der Date gps_tracker.py wurde versucht, immer der aktuelle Standort aus der S
 
 ## GPS-Empfänger
 
-**Wichtig:** Das Modul kann aufgrund seiner Sensitivität nur unter **freiem Himmel** betrieben werden** 
+**Wichtig:** Das Modul kann aufgrund seiner Sensitivität nur unter **freiem Himmel** betrieben werden 
 
 Parameter:  
 + 5 V Versorgung
@@ -74,6 +74,10 @@ Parameter:
 + NMEA & SiRF Support
 
 ### Verwendung
+
+![image](https://github.com/user-attachments/assets/b0275f77-0078-43b0-ba16-933a2ae481e8)
+
+Es wird die 5V Versorgung des Raspberrys und die UART-Schnitstelle verwendet. Zu beachten ist, dass ein Strombegrenzungswiderstand benutzt wird um den Raspberry nicht zu beschädigen. 
 
 Mit einer Terimalsoftware wie beispielsweise [HTerm](https://www.der-hammer.info/pages/terminal.html) können die rohen NMEA Sätze (im Default Mode) ausgelesen werden. Die Baudrate beträgt im Default Mode 4800 BPS. 
 
