@@ -115,3 +115,5 @@ Um unser Projekt auf dem Raspberry verwenden zu können müssen folgende Library
 - Flask
 - Pynmea2
 - serial
+- flask-cors
+
